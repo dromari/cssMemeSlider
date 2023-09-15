@@ -206,7 +206,7 @@ img {
 #mem9,
 #mem10,
 #mem5 {
-    height: 50em;
+    height: 37em;
 }
 
 
@@ -269,6 +269,12 @@ img {
 
     img {
         height: 40vh;
+    }
+
+    #mem9,
+    #mem10,
+    #mem5 {
+        height: 35em;
     }
 
 }
