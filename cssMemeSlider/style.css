@@ -1,28 +1,13 @@
-/*all*/
-
 body,
 html {
     margin: 0;
     padding: 0;
 }
 
-body {}
-
 a {
     text-decoration: none
 }
 
-img {}
-
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0)
-}
 
 ul {
     margin: 0;
@@ -30,183 +15,179 @@ ul {
     list-style: none
 }
 
-.main-wrapper {
-   
-}
-
-.home-link {
-    position: relative;
-    display: inline-block;
-    margin-top: 30px;
-    padding: 10px 20px;
-    box-sizing: border-box;
-    color: #333;
-    background-color: #eee;
-    border-radius: 3px;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, .3)
-}
-
-.home-link:focus,
-.home-link:hover {
-    background-color: #f6f6f6
-}
-
-.home-link:focus {
-    outline: 0
-}
-
-.home-link:active {
-    background-color: #f6f6f6;
-    top: 1px
-}
-
-.wrapper {
-      margin: 0 auto
-}
-
-
-/*slider*/
-
 .slider {
-    position: relative;
-    width: 95%;
-    padding-bottom: 50px;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
+    margin: 2em 2em;
 }
 
-.slider__toggle {
+.slider-input {
     display: none;
 }
 
-.slider__controls {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: block;
-    font-size: 0;
-}
-
-.slider__control {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    box-sizing: border-box;
-    margin-right: 20px;
-    border: 1px solid #ccc;
-    border-radius: 50%;
-}
-
-.slider__control:last-child {
-    margin-right: 0;
-}
-
-.slider__control:hover {
-    cursor: pointer;
-}
-
-.slider__slides {
+.slides,
+.texts {
     display: flex;
     flex-flow: row nowrap;
     width: 100%;
 }
 
-.slider__slide {
-    display: block;
+img {
+    height: 80vh;
+    padding: 2em;
+}
+
+.slide,
+.text {
+    display: flex;
+    justify-content: center;
     width: 100%;
-    height: 100vh;
     flex-shrink: 0;
     box-sizing: border-box;
-    border: 1px solid #ccc;
+    border: 0.1em solid #ccc;
 }
 
-#slider__toggle--1:checked~.slider__controls>.slider__control[for="slider__toggle--1"] {
-    background-color: #ccc;
+.text {
+    border: none;
 }
 
-#slider__toggle--2:checked~.slider__controls>.slider__control[for="slider__toggle--2"] {
-    background-color: #ccc;
+.texts {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
 }
 
-#slider__toggle--3:checked~.slider__controls>.slider__control[for="slider__toggle--3"] {
-    background-color: #ccc;
+
+.slider-labels {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#slider__toggle--4:checked~.slider__controls>.slider__control[for="slider__toggle--4"] {
-    background-color: #ccc;
+.slider-label {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    box-sizing: border-box;
+    margin-right: 1em;
+    border: 0.1em solid #ccc;
+    border-radius: 50%;
 }
 
-#slider__toggle--5:checked~.slider__controls>.slider__control[for="slider__toggle--5"] {
-    background-color: #ccc;
+.slider-label:last-child {
+    margin-right: 0;
 }
 
-#slider__toggle--6:checked~.slider__controls>.slider__control[for="slider__toggle--6"] {
-    background-color: #ccc;
+.slider-label:hover {
+    cursor: pointer;
 }
 
-#slider__toggle--7:checked~.slider__controls>.slider__control[for="slider__toggle--7"] {
-    background-color: #ccc;
+
+
+#slider-input1:checked~.slider-labels>.slider-label[for="slider-input1"] {
+    background-color: aqua;
 }
 
-#slider__toggle--8:checked~.slider__controls>.slider__control[for="slider__toggle--8"] {
-    background-color: #ccc;
+#slider-input2:checked~.slider-labels>.slider-label[for="slider-input2"] {
+    background-color: aqua;
 }
 
-#slider__toggle--9:checked~.slider__controls>.slider__control[for="slider__toggle--9"] {
-    background-color: #ccc;
+#slider-input3:checked~.slider-labels>.slider-label[for="slider-input3"] {
+    background-color: aqua;
 }
 
-#slider__toggle--10:checked~.slider__controls>.slider__control[for="slider__toggle--10"] {
-    background-color: #ccc;
+#slider-input4:checked~.slider-labels>.slider-label[for="slider-input4"] {
+    background-color: aqua;
 }
 
-#slider__toggle--1:checked~.slider__slides {
+#slider-input5:checked~.slider-labels>.slider-label[for="slider-input5"] {
+    background-color: aqua;
+}
+
+#slider-input6:checked~.slider-labels>.slider-label[for="slider-input6"] {
+    background-color: aqua;
+}
+
+#slider-input7:checked~.slider-labels>.slider-label[for="slider-input7"] {
+    background-color: aqua;
+}
+
+#slider-input8:checked~.slider-labels>.slider-label[for="slider-input8"] {
+    background-color: aqua;
+}
+
+#slider-input9:checked~.slider-labels>.slider-label[for="slider-input9"] {
+    background-color: aqua;
+}
+
+#slider-input10:checked~.slider-labels>.slider-label[for="slider-input10"] {
+    background-color: aqua;
+}
+
+#slider-input1:checked~.slides,
+#slider-input1:checked~.texts {
     transform: translateX(0);
     transition: transform 0.6s ease-in-out;
 }
 
-#slider__toggle--2:checked~.slider__slides {
+#slider-input2:checked~.slides,
+#slider-input2:checked~.texts {
     transform: translateX(-100%);
     transition: transform 0.6s ease-in-out;
 }
 
-#slider__toggle--3:checked~.slider__slides {
+#slider-input3:checked~.slides,
+#slider-input3:checked~.texts {
     transform: translateX(-200%);
     transition: transform 0.6s ease-in-out;
 }
 
-#slider__toggle--4:checked~.slider__slides {
+#slider-input4:checked~.slides,
+#slider-input4:checked~.texts {
     transform: translateX(-300%);
     transition: transform 0.6s ease-in-out;
 }
 
-#slider__toggle--5:checked~.slider__slides {
+#slider-input5:checked~.slides,
+#slider-input5:checked~.texts {
     transform: translateX(-400%);
     transition: transform 0.6s ease-in-out;
 }
 
-#slider__toggle--6:checked~.slider__slides {
+#slider-input6:checked~.slides,
+#slider-input6:checked~.texts {
     transform: translateX(-500%);
     transition: transform 0.6s ease-in-out;
 }
 
-#slider__toggle--7:checked~.slider__slides {
+#slider-input7:checked~.slides,
+#slider-input7:checked~.texts {
     transform: translateX(-600%);
     transition: transform 0.6s ease-in-out;
 }
 
-#slider__toggle--8:checked~.slider__slides {
+#slider-input8:checked~.slides,
+#slider-input8:checked~.texts {
     transform: translateX(-700%);
     transition: transform 0.6s ease-in-out;
 }
 
-#slider__toggle--9:checked~.slider__slides {
+#slider-input9:checked~.slides,
+#slider-input9:checked~.texts {
     transform: translateX(-800%);
     transition: transform 0.6s ease-in-out;
 }
 
-#slider__toggle--10:checked~.slider__slides {
+#slider-input10:checked~.slides,
+#slider-input10:checked~.texts {
     transform: translateX(-900%);
     transition: transform 0.6s ease-in-out;
+}
+
+
+
+#mem6,
+#mem8 {
+    width: 100%;
 }
