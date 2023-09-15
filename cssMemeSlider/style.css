@@ -36,8 +36,19 @@ ul {
     width: 100%;
 }
 
+.slide,
+.text {
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
 .slide {
+    box-sizing: border-box;
     background: #eeebeb;
+    border: 0.1em solid #ccc;
+    width: 100%;
+    height: 100%;
 }
 
 .texts {
@@ -49,20 +60,11 @@ img {
     padding: 2em;
 }
 
-.slide,
-.text {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    flex-shrink: 0;
-    box-sizing: border-box;
-    border: 0.1em solid #ccc;
-}
-
 .text {
     border: none;
     font-family: monospace;
     font-size: 2em;
+    width: 100%;
 }
 
 .slider-labels {
@@ -71,7 +73,7 @@ img {
     align-items: center;
     justify-content: center;
     margin: 2em 0;
-    gap: 2em;
+    gap: 4%;
 }
 
 .padding-label {
@@ -101,46 +103,44 @@ img {
     cursor: pointer;
 }
 
-
-
 #slider-input1:checked~.slider-labels>.slider-label[for="slider-input1"] {
-    background-color: aqua;
+    background-color: rgb(22, 153, 153);
 }
 
 #slider-input2:checked~.slider-labels>.slider-label[for="slider-input2"] {
-    background-color: aqua;
+    background-color: rgb(22, 153, 153);
 }
 
 #slider-input3:checked~.slider-labels>.slider-label[for="slider-input3"] {
-    background-color: aqua;
+    background-color: rgb(22, 153, 153);
 }
 
 #slider-input4:checked~.slider-labels>.slider-label[for="slider-input4"] {
-    background-color: aqua;
+    background-color: rgb(22, 153, 153);
 }
 
 #slider-input5:checked~.slider-labels>.slider-label[for="slider-input5"] {
-    background-color: aqua;
+    background-color: rgb(22, 153, 153);
 }
 
 #slider-input6:checked~.slider-labels>.slider-label[for="slider-input6"] {
-    background-color: aqua;
+    background-color: rgb(22, 153, 153);
 }
 
 #slider-input7:checked~.slider-labels>.slider-label[for="slider-input7"] {
-    background-color: aqua;
+    background-color: rgb(22, 153, 153);
 }
 
 #slider-input8:checked~.slider-labels>.slider-label[for="slider-input8"] {
-    background-color: aqua;
+    background-color: rgb(22, 153, 153);
 }
 
 #slider-input9:checked~.slider-labels>.slider-label[for="slider-input9"] {
-    background-color: aqua;
+    background-color: rgb(22, 153, 153);
 }
 
 #slider-input10:checked~.slider-labels>.slider-label[for="slider-input10"] {
-    background-color: aqua;
+    background-color: rgb(22, 153, 153);
 }
 
 #slider-input1:checked~.slides,
@@ -203,9 +203,72 @@ img {
     transition: transform 0.6s ease-in-out;
 }
 
+#mem9,
+#mem10,
+#mem5 {
+    height: 50em;
+}
 
 
-#mem6,
-#mem8 {
-    width: 100%;
+@media screen and (max-width: 1220px) {
+
+    #mem6,
+    #mem8 {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+
+    #mem2,
+    #mem4 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 960px) {
+
+    #mem1,
+    #mem3,
+    #mem5,
+    #mem7 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 920px) {
+
+    .slides,
+    .texts {
+        align-items: center;
+    }
+
+    img {
+        height: 65vh;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    img {
+        height: 55vh;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+
+    img {
+        height: 47vh;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+
+    img {
+        height: 40vh;
+    }
+
 }
