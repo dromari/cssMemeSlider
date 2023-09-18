@@ -30,20 +30,15 @@ ul {
     display: none;
 }
 
-.slides,
-.texts {
+.slides {
     display: flex;
     width: 100%;
 }
 
-.slide,
-.text {
+.slide {
     display: flex;
     justify-content: center;
     flex-shrink: 0;
-}
-
-.slide {
     box-sizing: border-box;
     background: #eeebeb;
     border: 0.1em solid #ccc;
@@ -52,6 +47,8 @@ ul {
 }
 
 .texts {
+    display: flex;
+    width: 100%;
     margin-top: 2em;
 }
 
@@ -61,11 +58,59 @@ img {
 }
 
 .text {
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
     border: none;
     font-family: monospace;
     font-size: 2em;
     width: 100%;
 }
+
+.text {
+    display: none;
+}
+
+#slider-input1:checked~.texts>.text  {
+    display: block;
+}
+
+#slider-input2:checked~.texts>.text {
+    display: block;
+}
+
+#slider-input3:checked~.texts>.text {
+    display: block;
+}
+
+#slider-input4:checked~.texts>.text {
+    display: block;
+}
+
+#slider-input5:checked~.texts>.text {
+    display: block;
+}
+
+#slider-input6:checked~.texts>.text {
+    display: block;
+}
+
+#slider-input7:checked~.texts>.text {
+    display: block;
+}
+
+#slider-input8:checked~.texts>.text {
+    display: block;
+}
+
+#slider-input9:checked~.texts>.text {
+    display: block;
+}
+
+#slider-input10:checked~.texts>.text {
+    display: block;
+}
+
 
 .location {
     display: block;
@@ -103,62 +148,86 @@ img {
     cursor: pointer;
     background-color: rgb(219, 247, 247);
     border: 0.15em solid rgba(0, 0, 0, 0.3);
+    width: 0.85em;
+    height: 0.85em;
 }
 
 .slider-label:active {
     cursor: pointer;
     background-color: rgb(219, 247, 247);
+    width: 0.85em;
+    height: 0.85em;
 }
 
 
 #slider-input1:checked~.slider-labels>.slider-label[for="slider-input1"] {
     border: 0.15em solid rgba(0, 0, 0, 0.3);
     background-color: rgba(240, 248, 255, 0);
+    width: 0.85em;
+    height: 0.85em;
 }
 
 #slider-input2:checked~.slider-labels>.slider-label[for="slider-input2"] {
     border: 0.15em solid rgba(0, 0, 0, 0.3);
     background-color: rgba(240, 248, 255, 0);
+    width: 0.85em;
+    height: 0.85em;
 }
 
 #slider-input3:checked~.slider-labels>.slider-label[for="slider-input3"] {
     border: 0.15em solid rgba(0, 0, 0, 0.3);
     background-color: rgba(240, 248, 255, 0);
+    width: 0.85em;
+    height: 0.85em;
 }
 
 #slider-input4:checked~.slider-labels>.slider-label[for="slider-input4"] {
     border: 0.15em solid rgba(0, 0, 0, 0.3);
     background-color: rgba(240, 248, 255, 0);
+    width: 0.85em;
+    height: 0.85em;
 }
 
 #slider-input5:checked~.slider-labels>.slider-label[for="slider-input5"] {
     border: 0.15em solid rgba(0, 0, 0, 0.3);
     background-color: rgba(240, 248, 255, 0);
+    width: 0.85em;
+    height: 0.85em;
 }
 
 #slider-input6:checked~.slider-labels>.slider-label[for="slider-input6"] {
     border: 0.15em solid rgba(0, 0, 0, 0.3);
     background-color: rgba(240, 248, 255, 0);
+    width: 0.85em;
+    height: 0.85em;
 }
 
 #slider-input7:checked~.slider-labels>.slider-label[for="slider-input7"] {
     border: 0.15em solid rgba(0, 0, 0, 0.3);
     background-color: rgba(240, 248, 255, 0);
+    width: 0.85em;
+    height: 0.85em;
 }
 
 #slider-input8:checked~.slider-labels>.slider-label[for="slider-input8"] {
     border: 0.15em solid rgba(0, 0, 0, 0.3);
     background-color: rgba(240, 248, 255, 0);
+    width: 0.85em;
+    height: 0.85em;
 }
 
 #slider-input9:checked~.slider-labels>.slider-label[for="slider-input9"] {
     border: 0.15em solid rgba(0, 0, 0, 0.3);
     background-color: rgba(240, 248, 255, 0);
+    width: 0.85em;
+    height: 0.85em;
 }
 
 #slider-input10:checked~.slider-labels>.slider-label[for="slider-input10"] {
     border: 0.15em solid rgba(0, 0, 0, 0.3);
     background-color: rgba(240, 248, 255, 0);
+    width: 0.85em;
+    height: 0.85em;
 }
 
 #slider-input1:checked~.slides,
