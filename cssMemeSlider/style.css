@@ -67,6 +67,10 @@ img {
     width: 100%;
 }
 
+.location {
+    display: block;
+}
+
 .slider-labels {
     cursor: pointer;
     display: flex;
@@ -80,10 +84,6 @@ img {
     padding: 1.5em;
 }
 
-.padding-label:hover {
-    border: 0.1em solid #ccc;
-    border-radius: 100%;
-}
 
 .slider-label {
     display: flex;
@@ -91,8 +91,8 @@ img {
     align-items: center;
     width: 1em;
     height: 1em;
-    border: 0.1em solid rgba(0, 0, 0, 0.3);
-    border-radius: 50%;
+    background-color: rgb(22, 153, 153);
+    border-radius: 100%;
 }
 
 .slider-label:last-child {
@@ -101,46 +101,64 @@ img {
 
 .slider-label:hover {
     cursor: pointer;
+    background-color: rgb(219, 247, 247);
+    border: 0.15em solid rgba(0, 0, 0, 0.3);
 }
 
+.slider-label:active {
+    cursor: pointer;
+    background-color: rgb(219, 247, 247);
+}
+
+
 #slider-input1:checked~.slider-labels>.slider-label[for="slider-input1"] {
-    background-color: rgb(22, 153, 153);
+    border: 0.15em solid rgba(0, 0, 0, 0.3);
+    background-color: rgba(240, 248, 255, 0);
 }
 
 #slider-input2:checked~.slider-labels>.slider-label[for="slider-input2"] {
-    background-color: rgb(22, 153, 153);
+    border: 0.15em solid rgba(0, 0, 0, 0.3);
+    background-color: rgba(240, 248, 255, 0);
 }
 
 #slider-input3:checked~.slider-labels>.slider-label[for="slider-input3"] {
-    background-color: rgb(22, 153, 153);
+    border: 0.15em solid rgba(0, 0, 0, 0.3);
+    background-color: rgba(240, 248, 255, 0);
 }
 
 #slider-input4:checked~.slider-labels>.slider-label[for="slider-input4"] {
-    background-color: rgb(22, 153, 153);
+    border: 0.15em solid rgba(0, 0, 0, 0.3);
+    background-color: rgba(240, 248, 255, 0);
 }
 
 #slider-input5:checked~.slider-labels>.slider-label[for="slider-input5"] {
-    background-color: rgb(22, 153, 153);
+    border: 0.15em solid rgba(0, 0, 0, 0.3);
+    background-color: rgba(240, 248, 255, 0);
 }
 
 #slider-input6:checked~.slider-labels>.slider-label[for="slider-input6"] {
-    background-color: rgb(22, 153, 153);
+    border: 0.15em solid rgba(0, 0, 0, 0.3);
+    background-color: rgba(240, 248, 255, 0);
 }
 
 #slider-input7:checked~.slider-labels>.slider-label[for="slider-input7"] {
-    background-color: rgb(22, 153, 153);
+    border: 0.15em solid rgba(0, 0, 0, 0.3);
+    background-color: rgba(240, 248, 255, 0);
 }
 
 #slider-input8:checked~.slider-labels>.slider-label[for="slider-input8"] {
-    background-color: rgb(22, 153, 153);
+    border: 0.15em solid rgba(0, 0, 0, 0.3);
+    background-color: rgba(240, 248, 255, 0);
 }
 
 #slider-input9:checked~.slider-labels>.slider-label[for="slider-input9"] {
-    background-color: rgb(22, 153, 153);
+    border: 0.15em solid rgba(0, 0, 0, 0.3);
+    background-color: rgba(240, 248, 255, 0);
 }
 
 #slider-input10:checked~.slider-labels>.slider-label[for="slider-input10"] {
-    background-color: rgb(22, 153, 153);
+    border: 0.15em solid rgba(0, 0, 0, 0.3);
+    background-color: rgba(240, 248, 255, 0);
 }
 
 #slider-input1:checked~.slides,
