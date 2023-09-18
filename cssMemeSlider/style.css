@@ -71,7 +71,7 @@ img {
     display: none;
 }
 
-#slider-input1:checked~.texts>.text  {
+#slider-input1:checked~.texts>.text {
     display: block;
 }
 
@@ -120,8 +120,8 @@ img {
     cursor: pointer;
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin: 2em 0;
+    justify-content: end;
+    margin-top: 1em;
     gap: 4%;
 }
 
@@ -362,6 +362,10 @@ img {
     #mem10,
     #mem5 {
         height: 35em;
+    }
+
+    .slider-labels {
+        justify-content: center;
     }
 
 }
