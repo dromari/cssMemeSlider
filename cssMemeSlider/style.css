@@ -49,7 +49,8 @@ ul {
 .texts {
     display: flex;
     width: 100%;
-    margin-top: 2em;
+    margin-top: -2.5em;
+    z-index: 5;
 }
 
 img {
@@ -121,12 +122,15 @@ img {
     display: flex;
     align-items: center;
     justify-content: end;
-    margin-top: 1em;
-    gap: 4%;
+    margin: 2em 0 0 50%;
+    gap: 6%;
+    z-index: 10;
+    background-color: #e4e2e2;
+    padding: 1em;
 }
 
 .padding-label {
-    padding: 1.5em;
+    padding: 1.35em;
 }
 
 
@@ -312,6 +316,8 @@ img {
     #mem4 {
         width: 100%;
     }
+
+
 }
 
 @media screen and (max-width: 960px) {
@@ -322,6 +328,11 @@ img {
     #mem7 {
         width: 100%;
     }
+
+    .texts {
+        margin-top: 2em;
+    }
+
 }
 
 @media screen and (max-width: 920px) {
@@ -341,6 +352,11 @@ img {
     img {
         height: 55vh;
     }
+
+    .slider-labels {
+        margin: 0;
+    }
+
 
 }
 
